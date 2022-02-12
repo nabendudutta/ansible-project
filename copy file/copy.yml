@@ -1,0 +1,8 @@
+-
+    name: Copy file from controller to targate servers
+    hosts: targate_servers
+    tasks:
+      - name: Copy file from controller to targate servers
+        copy:
+          src: /tmp/testfile.txt
+          dest: /tmp/testfile.txt
