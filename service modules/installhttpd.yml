@@ -7,4 +7,4 @@
          yum: name=httpd state=present
       -
          name: enable httpd service during boot time
-         service: name:httpd state=enabled
+         service: name=httpd state=enabled
