@@ -1,0 +1,9 @@
+-
+   name: stop httpd service
+   hosts: targate_servers
+   tasks:
+     -
+        name: stop httpd service
+        service:
+           name: httpd
+           state: started
