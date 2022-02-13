@@ -1,0 +1,7 @@
+-
+    name: Install httpd service
+    hosts: targate_servers
+    tasks:
+      -
+          name: install httpd service
+          service: name: httpd state: present  
