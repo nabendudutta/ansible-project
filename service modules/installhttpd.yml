@@ -5,3 +5,6 @@
       -
          name: install httpd service
          yum: name=httpd state=present
+      -
+         name: enable httpd service during boot time
+         service: name:httpd state=enabled
