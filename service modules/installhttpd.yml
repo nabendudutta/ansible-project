@@ -3,5 +3,5 @@
     hosts: targate_servers
     tasks:
       -
-          name: install httpd service
-          service: name: httpd state: present  
+         name: install httpd service
+         yum: name=httpd state=present
