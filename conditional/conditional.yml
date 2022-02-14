@@ -1,8 +1,9 @@
 ---
-  -  name: display os version
-     hosts: all
-     tasks:
-       -
-          name: display OS version
-          shell: cat /etc/redhat-release  >> /tmp/1.txt
-          when: 'ansible_os_family=="Redhat"' and 'ansible_host=="192.168.0.109"'
+-
+  hosts: all
+  name: "display os version"
+  tasks:
+    -
+      name: "display OS version"
+      shell: "cat /etc/redhat-release  >> /tmp/1.txt"
+      when: "('ansible_os_family == \"Redhat\"') and ('ansible_host == \"192.168.0.109\"')"
